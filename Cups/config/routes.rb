@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-resources :aquas
+  resources :aquas
   resources :users
   get '/sign_in' => 'aquas#sign_in'
   get '/profile' => 'aquas#profile'
+
+  root 'aquas#index' 
 
 
   post '/aquas' => 'aquas#create'
