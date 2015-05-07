@@ -1,11 +1,5 @@
 Rails.application.routes.draw do
-  get 'aqua/index'
-
-  get 'aqua/show'
-
-  get 'aqua/new'
-
-  get 'aqua/edit'
+resources :aquas 
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
