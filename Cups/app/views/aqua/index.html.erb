@@ -1,2 +1,16 @@
-<h1>Aqua#index</h1>
-<p>Find me in app/views/aqua/index.html.erb</p>
+<h1>Water In A Glass</h1>
+
+<ul>
+	<%= @aquas.each |aqua| do%>
+		<li>
+			<%= aqua.name %>
+			<li>
+			<%= aqua.description %>
+			</li>
+		</li>
+		
+	<% end %>
+
+
+</ul>
+

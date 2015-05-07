@@ -2,6 +2,7 @@ class AquaController < ApplicationController
   def index
     @aquas = Aqua.all
     #Bret does this
+    @aquas = Aqua.all
   end
 
   def show

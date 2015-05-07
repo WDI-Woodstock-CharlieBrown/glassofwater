@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
-resources :aquas 
+resources :aquas
+  resources :users
+  get '/sign_in' => 'aquas#sign_in'
+  get '/profile' => 'aquas#profile'
+
+
+  post '/aquas' => 'aquas#create'
+  delete '/aquas/:id' => 'aquas#destroy'
+
+  post '/session_log_in' => 'sessions#log_in_behavior'
+  delete '/session_log_out' => 'sessions#log_out_behavior'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
